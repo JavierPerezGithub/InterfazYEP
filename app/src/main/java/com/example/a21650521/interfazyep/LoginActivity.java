@@ -12,7 +12,7 @@ private TextView mSignUp;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        mSignUp = (TextView)findViewById(R.id.textDont);
+        mSignUp = (TextView)findViewById(R.id.idDont);
     }
 
     public void onClick(View v){

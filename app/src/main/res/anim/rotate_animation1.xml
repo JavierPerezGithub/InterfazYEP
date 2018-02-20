@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:fillAfter="true"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="-90"/>
+    <!-- duration en milesimas de segundo -->
+    <!-- fillAfter cuando finalice la animación conserva su estado estando en true -->
+    <!-- fromDegrees posición inicial del Widget -->
+    <!-- toDegrees posición final del Widget -->
+    <!-- pivotX pivote en el eje de x que se toma como referencia para la animación -->
+    <!-- pivotY pivote en el eje de y que se toma como referencia para la animación -->
