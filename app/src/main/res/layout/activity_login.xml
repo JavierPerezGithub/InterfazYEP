@@ -7,14 +7,25 @@
         tools:context="com.example.a21650521.interfazyep.LoginActivity">
 
         <ImageView
-            android:id="@+id/imageView"
-            style="@style/MyImageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/lobo" />
+        android:id="@+id/imageView"
+        style="@style/MyImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/lobo" />
+
+    <ImageView
+        android:id="@+id/imageViewRotate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        app:srcCompat="@drawable/avatar_empty" />
 
         <TextView
             android:id="@+id/textView5"

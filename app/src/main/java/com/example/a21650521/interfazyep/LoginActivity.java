@@ -4,15 +4,23 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 private TextView mSignUp;
+private ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        mSignUp = (TextView)findViewById(R.id.idDont);
+        mSignUp = findViewById(R.id.idDont);
+        img = findViewById(R.id.imageViewRotate);
+        Animation rotate = AnimationUtils.loadAnimation(
+                this, R.anim.rotate_animation1);
+        img.setAnimation(rotate);
     }
 
     public void onClick(View v){
