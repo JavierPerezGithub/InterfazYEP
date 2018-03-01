@@ -1,6 +1,7 @@
 package com.example.a21650521.interfazyep;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -42,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         adaptador = new Adaptador(this, R.layout.xml, lista);
         lv = findViewById(R.id.idListView);
         lv.setAdapter(adaptador);
-
+        Typeface face = Typeface.createFromAsset(getAssets(),"fonts/AmaticSC-Regular.ttf");
+        textoquesea.setTypeface(face);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
