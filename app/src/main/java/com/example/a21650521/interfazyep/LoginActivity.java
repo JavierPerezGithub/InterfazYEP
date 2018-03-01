@@ -18,13 +18,16 @@ private ImageView img;
         setContentView(R.layout.activity_login);
         mSignUp = findViewById(R.id.idDont);
         img = findViewById(R.id.imageViewRotate);
-        Animation rotate = AnimationUtils.loadAnimation(
-                this, R.anim.rotate_animation1);
-        img.setAnimation(rotate);
+
+        Animation scale = AnimationUtils.loadAnimation(
+                this, R.anim.scale_animation1);
+        img.setAnimation(scale);
+
+
     }
 
     public void onClick(View v){
-        Intent intent = new Intent(this, SignupActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
